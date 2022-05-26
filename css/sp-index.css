@@ -157,7 +157,12 @@
     display: none;
   }
   body #wrap #right-contents #sp-gallery {
-    display: none;
+    display: block;
+  }
+  body #wrap #right-contents #sp-gallery .slider img {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
   }
   body #wrap #right-contents #movie {
     margin: 50px 5% 0 5%;
