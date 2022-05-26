@@ -1,22 +1,64 @@
 @media screen and (max-width: 767px) {
+  .label {
+    color: #fff;
+    background-color: #a7630b;
+    position: relative;
+    padding: 10px 5px;
+    font-size: 17px;
+  }
+  .label::after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border-width: 17px 14px 17px 0px;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+  }
+  .wish-button {
+    background-color: #EB68A0;
+    border: solid 2px #fff;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 8px gray;
+            box-shadow: 0px 0px 8px gray;
+    color: #fff;
+    cursor: pointer;
+    width: 150px;
+    font-size: 17px;
+  }
+  .sp-wish-button {
+    background-color: #EB68A0;
+    border: solid 2px #fff;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 8px gray;
+            box-shadow: 0px 0px 8px gray;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    font-size: 17px;
+  }
   body {
-    background-color: black;
-    margin: 0;
-    width: 600px;
+    width: 960px;
+    margin: 0 auto;
   }
   body header {
     background-color: #434343;
-    color: #fff;
-    width: 600px;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
   }
   body header .header-img {
-    margin-left: 20px;
-  }
-  body header input {
-    display: none;
+    width: 80px;
+    height: 80px;
   }
   body header #menu {
     display: block;
+  }
+  body header #menu input {
+    display: none;
   }
   body header #menu .menu-button {
     position: fixed;
@@ -40,11 +82,10 @@
   }
   body header #menu .menu-button .close-img {
     display: none;
-    margin: 65px 20px 0 0;
   }
   body header #menu .menu-list {
     width: 100%;
-    height: 90%;
+    height: 100%;
     position: fixed;
     bottom: 0;
     left: 100%;
@@ -89,6 +130,321 @@
   }
   body header #menu #menu-button-check:checked ~ .menu-button .close-img {
     display: block;
+    margin: 65px 20px 0 0;
+    z-index: 90;
+  }
+  body .top-img {
+    width: 100%;
+    height: 450px;
+  }
+  body #wrap {
+    width: 100%;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body #wrap #left-contents {
+    display: none;
+  }
+  body #wrap #right-contents {
+    width: 100%;
+    height: 100%;
+  }
+  body #wrap #right-contents #gallery {
+    display: none;
+  }
+  body #wrap #right-contents #sp-gallery {
+    display: none;
+  }
+  body #wrap #right-contents #movie {
+    margin: 50px 5% 0 5%;
+  }
+  body #wrap #right-contents #information {
+    background-color: #7B7B7B;
+    color: #fff;
+    display: block;
+    margin: 80px 0 0 0;
+    width: 100%;
+    height: 400px;
+  }
+  body #wrap #right-contents #information .information-title {
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: solid #fff 2px;
+    border-right: 0px;
+    margin: auto;
+  }
+  body #wrap #right-contents #information .information-title h3 {
+    font-size: 20px;
+    position: relative;
+  }
+  body #wrap #right-contents #information .information-title h3::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    margin: auto;
+  }
+  body #wrap #right-contents #information .information-list ul {
+    margin-left: 25%;
+    margin-top: 50px;
+  }
+  body #wrap #right-contents #information .information-list ul li {
+    padding: 10px;
+  }
+  body #wrap #right-contents #itroduction-area-shinagawa {
+    display: block;
+    margin: 80px 5% 0 5%;
+  }
+  body #wrap #right-contents #itroduction-area-shinagawa img {
+    width: 100%;
+    height: 330px;
+  }
+  body #wrap #right-contents #itroduction-area-shinagawa .itroduction-text {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  body #wrap #right-contents #itroduction-area-shinagawa .itroduction-text p {
+    font-size: 14px;
+    margin: 20px 0 10px 30px;
+    line-height: 1.5;
+  }
+  body #wrap #right-contents #itroduction-area-shinagawa .itroduction-text .button-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body #wrap #right-contents #itroduction-area-shinagawa .itroduction-text .button-area .link-button {
+    background-color: #A29453;
+    border: none;
+    -webkit-box-shadow: 2px 2px 4px gray;
+            box-shadow: 2px 2px 4px gray;
+    width: 100%;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 5px 0;
+    margin: 30px 120px 10px 120px;
+  }
+  body #wrap #right-contents #shopping {
+    background-color: #7B7B7B;
+    margin: 0 0 0 0;
+    text-align: center;
+  }
+  body #wrap #right-contents #shopping .item-box {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 10%;
+  }
+  body #wrap #right-contents #shopping .item-box img {
+    height: 700px;
+    width: 100%;
+  }
+  body #wrap #right-contents #shopping .item-box .item1 {
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
+  body #wrap #right-contents #shopping .item-box .item1 p {
+    font-size: 14px;
+    padding: 30px;
+    margin: 0 0 0 0;
+    display: block;
+  }
+  body #wrap #right-contents #shopping .item-box .item1 .sp-wish-button {
+    display: block;
+  }
+  body #wrap #right-contents #shopping .item-box .item2 {
+    background-color: #fff;
+    margin: 200px 0 10px 0;
+  }
+  body #wrap #right-contents #shopping .item-box .item2 p {
+    padding: 30px;
+    font-size: 14px;
+    margin: 0 0 0 0;
+  }
+  body #wrap #right-contents #shopping .item-box .item2 .sp-wish-button {
+    display: block;
+  }
+  body #wrap #right-contents #shopping .item-box .item3 {
+    background-color: #fff;
+    margin: 200px 0 10px 0;
+  }
+  body #wrap #right-contents #shopping .item-box .item3 p {
+    padding: 30px;
+    font-size: 14px;
+    margin: 0 0 0 0;
+  }
+  body #wrap #right-contents #shopping .item-box .item3 .sp-wish-button {
+    display: block;
+  }
+  body #wrap #right-contents #shopping .shopping-button {
+    display: none;
+  }
+  body #wrap #right-contents #itroduction-area-hakkeijima {
+    margin: 80px 5% 0 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body #wrap #right-contents #itroduction-area-hakkeijima img {
+    margin-left: 20px;
+    width: 100%;
+    height: 330px;
+  }
+  body #wrap #right-contents #itroduction-area-hakkeijima .itroduction-text {
+    margin-top: 10px;
+    width: 100%;
+  }
+  body #wrap #right-contents #itroduction-area-hakkeijima .itroduction-text p {
+    font-size: 14px;
+    margin: 10px 0 10px 30px;
+    line-height: 2;
+  }
+  body #wrap #right-contents #itroduction-area-hakkeijima .itroduction-text .link-button-modal {
+    background-color: #A29453;
+    border: none;
+    -webkit-box-shadow: 2px 2px 4px gray;
+            box-shadow: 2px 2px 4px gray;
+    width: 100%;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 5px 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  body #wrap #right-contents #itroduction-area-hakkeijima .itroduction-text .link-button-modal::after {
+    content: url(../images/modal.png);
+    float: right;
+    margin: 4px 5% 0 0;
+  }
+  body #wrap #right-contents #wish-list {
+    background-color: #7B7B7B;
+    margin: 80px 0 0 0;
+    width: 100%;
+    padding: 80px 0;
+  }
+  body #wrap #right-contents #wish-list .wish-box {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #wrap #right-contents #wish-list .wish-box img {
+    height: 200px;
+    width: 200px;
+  }
+  body #wrap #right-contents #wish-list .wish-box .item1 {
+    margin: 0 30px;
+  }
+  body #wrap #right-contents #wish-list .wish-box .item1 p {
+    margin: 5px 0 30px 5px;
+  }
+  body #wrap #right-contents #wish-list .wish-box .item1 .button-area {
+    text-align: center;
+  }
+  body #wrap #right-contents #wish-list .wish-box .item1 .button-area .wish-button {
+    background-color: #EB68A0;
+    border: solid 2px #fff;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 8px gray;
+            box-shadow: 0px 0px 8px gray;
+    color: #fff;
+    cursor: pointer;
+    width: 150px;
+    font-size: 17px;
+  }
+  body #wrap #right-contents #wish-list .wish-box .item2 {
+    margin: 0 30px;
+  }
+  body #wrap #right-contents #wish-list .wish-box .item2 p {
+    margin: 5px 0 30px 5px;
+  }
+  body #wrap #right-contents #wish-list .wish-box .item2 .button-area {
+    text-align: center;
+  }
+  body #wrap #right-contents #wish-list .wish-box .item2 .button-area .wish-button {
+    background-color: #EB68A0;
+    border: solid 2px #fff;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 8px gray;
+            box-shadow: 0px 0px 8px gray;
+    color: #fff;
+    cursor: pointer;
+    width: 150px;
+    font-size: 17px;
+  }
+  body #wrap #right-contents #itroduction-area-kamogawa {
+    margin: 50px 5% 0 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body #wrap #right-contents #itroduction-area-kamogawa img {
+    width: 100%;
+    height: 330px;
+  }
+  body #wrap #right-contents #itroduction-area-kamogawa .itroduction-text {
+    margin-left: 20px;
+  }
+  body #wrap #right-contents #itroduction-area-kamogawa .itroduction-text p {
+    font-size: 14px;
+    margin: 10px 0 10px 30px;
+    line-height: 1.5;
+  }
+  body #wrap #right-contents #itroduction-area-kamogawa .itroduction-text .link-button-next {
+    background-color: #A29453;
+    border: none;
+    -webkit-box-shadow: 2px 2px 4px gray;
+            box-shadow: 2px 2px 4px gray;
+    width: 100%;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 5px 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  body #wrap #right-contents #itroduction-area-kamogawa .itroduction-text .link-button-next::after {
+    content: url(../images/link.png);
+    float: right;
+    margin: 4px 5% 0 0;
+  }
+  body footer {
+    background-color: #434343;
+    color: #fff;
+    width: 960px;
+  }
+  body footer .img-box {
+    text-align: center;
+    padding-top: 30px;
+  }
+  body footer .img-box img {
+    width: 100px;
+    height: 100px;
+  }
+  body footer .text-box {
+    font-size: 20px;
+    padding: 200px 0 50px 0;
+  }
+  body footer .text-box p {
+    margin: 15px 25px;
   }
 }
 /*# sourceMappingURL=sp-index.css.map */
