@@ -26,7 +26,8 @@
             box-shadow: 0px 0px 8px gray;
     color: #fff;
     cursor: pointer;
-    width: 150px;
+    width: 90%;
+    height: 50px;
     font-size: 17px;
   }
   .sp-wish-button {
@@ -38,10 +39,11 @@
     color: #fff;
     cursor: pointer;
     width: 100%;
+    height: 50px;
     font-size: 17px;
   }
   body {
-    width: 960px;
+    width: 600px;
     margin: 0 auto;
   }
   body header {
@@ -231,10 +233,11 @@
     cursor: pointer;
     font-size: 17px;
     padding: 5px 0;
-    margin: 30px 120px 10px 120px;
+    margin: 30px 10px 50px 10px;
   }
   body #wrap #right-contents #shopping {
     background-color: #7B7B7B;
+    padding-bottom: 50px;
     margin: 0 0 0 0;
     text-align: center;
   }
@@ -246,7 +249,7 @@
     margin: 0 10%;
   }
   body #wrap #right-contents #shopping .item-box img {
-    height: 700px;
+    height: 400px;
     width: 100%;
   }
   body #wrap #right-contents #shopping .item-box .item1 {
@@ -258,10 +261,7 @@
   body #wrap #right-contents #shopping .item-box .item1 p {
     font-size: 14px;
     padding: 30px;
-    margin: 0 0 0 0;
-    display: block;
-  }
-  body #wrap #right-contents #shopping .item-box .item1 .sp-wish-button {
+    margin: 0 0 10px 0;
     display: block;
   }
   body #wrap #right-contents #shopping .item-box .item2 {
@@ -273,9 +273,6 @@
     font-size: 14px;
     margin: 0 0 0 0;
   }
-  body #wrap #right-contents #shopping .item-box .item2 .sp-wish-button {
-    display: block;
-  }
   body #wrap #right-contents #shopping .item-box .item3 {
     background-color: #fff;
     margin: 200px 0 10px 0;
@@ -285,7 +282,7 @@
     font-size: 14px;
     margin: 0 0 0 0;
   }
-  body #wrap #right-contents #shopping .item-box .item3 .sp-wish-button {
+  body #wrap #right-contents #shopping .item-box .sp-wish-button {
     display: block;
   }
   body #wrap #right-contents #shopping .shopping-button {
@@ -293,12 +290,16 @@
   }
   body #wrap #right-contents #itroduction-area-hakkeijima {
     margin: 80px 5% 0 5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
+  }
+  body #wrap #right-contents #itroduction-area-hakkeijima .pc-area-img {
+    display: none;
+  }
+  body #wrap #right-contents #itroduction-area-hakkeijima .sp-area-img {
+    display: block;
   }
   body #wrap #right-contents #itroduction-area-hakkeijima img {
-    margin-left: 20px;
+    margin: 50px auto;
     width: 100%;
     height: 330px;
   }
@@ -338,69 +339,50 @@
   }
   body #wrap #right-contents #wish-list .wish-box {
     color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   body #wrap #right-contents #wish-list .wish-box img {
-    height: 200px;
-    width: 200px;
+    height: 500px;
+    width: 90%;
   }
   body #wrap #right-contents #wish-list .wish-box .item1 {
-    margin: 0 30px;
+    text-align: center;
+    margin: 0 30px 50px 30px;
   }
   body #wrap #right-contents #wish-list .wish-box .item1 p {
-    margin: 5px 0 30px 5px;
+    padding-left: 30px;
+    text-align: start;
+    margin: 5px 0 20px 5px;
   }
   body #wrap #right-contents #wish-list .wish-box .item1 .button-area {
     text-align: center;
   }
-  body #wrap #right-contents #wish-list .wish-box .item1 .button-area .wish-button {
-    background-color: #EB68A0;
-    border: solid 2px #fff;
-    border-radius: 50px;
-    -webkit-box-shadow: 0px 0px 8px gray;
-            box-shadow: 0px 0px 8px gray;
-    color: #fff;
-    cursor: pointer;
-    width: 150px;
-    font-size: 17px;
-  }
   body #wrap #right-contents #wish-list .wish-box .item2 {
+    text-align: center;
     margin: 0 30px;
   }
   body #wrap #right-contents #wish-list .wish-box .item2 p {
-    margin: 5px 0 30px 5px;
+    padding-left: 30px;
+    text-align: start;
+    margin: 5px 0 20px 5px;
   }
   body #wrap #right-contents #wish-list .wish-box .item2 .button-area {
     text-align: center;
   }
-  body #wrap #right-contents #wish-list .wish-box .item2 .button-area .wish-button {
-    background-color: #EB68A0;
-    border: solid 2px #fff;
-    border-radius: 50px;
-    -webkit-box-shadow: 0px 0px 8px gray;
-            box-shadow: 0px 0px 8px gray;
-    color: #fff;
-    cursor: pointer;
-    width: 150px;
-    font-size: 17px;
-  }
   body #wrap #right-contents #itroduction-area-kamogawa {
     margin: 50px 5% 0 5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
   body #wrap #right-contents #itroduction-area-kamogawa img {
     width: 100%;
     height: 330px;
   }
   body #wrap #right-contents #itroduction-area-kamogawa .itroduction-text {
-    margin-left: 20px;
+    width: 100%;
+    margin: 50px 0 0 0;
   }
   body #wrap #right-contents #itroduction-area-kamogawa .itroduction-text p {
     font-size: 14px;
@@ -418,7 +400,7 @@
     cursor: pointer;
     font-size: 17px;
     padding: 5px 0;
-    margin-top: 30px;
+    margin-top: 5px;
     margin-bottom: 10px;
   }
   body #wrap #right-contents #itroduction-area-kamogawa .itroduction-text .link-button-next::after {
@@ -429,10 +411,9 @@
   body footer {
     background-color: #434343;
     color: #fff;
-    width: 960px;
+    width: 100%;
   }
   body footer .img-box {
-    text-align: center;
     padding-top: 30px;
   }
   body footer .img-box img {

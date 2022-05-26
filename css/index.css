@@ -372,6 +372,10 @@ body #wrap #right-contents #itroduction-area-hakkeijima {
   display: flex;
 }
 
+body #wrap #right-contents #itroduction-area-hakkeijima .sp-area-img {
+  display: none;
+}
+
 body #wrap #right-contents #itroduction-area-hakkeijima img {
   margin-left: 20px;
   width: 280px;
@@ -444,18 +448,6 @@ body #wrap #right-contents #wish-list .wish-box .item1 .button-area {
   text-align: center;
 }
 
-body #wrap #right-contents #wish-list .wish-box .item1 .button-area .wish-button {
-  background-color: #EB68A0;
-  border: solid 2px #fff;
-  border-radius: 50px;
-  -webkit-box-shadow: 0px 0px 8px gray;
-          box-shadow: 0px 0px 8px gray;
-  color: #fff;
-  cursor: pointer;
-  width: 150px;
-  font-size: 17px;
-}
-
 body #wrap #right-contents #wish-list .wish-box .item2 {
   margin: 0 30px;
 }
@@ -466,18 +458,6 @@ body #wrap #right-contents #wish-list .wish-box .item2 p {
 
 body #wrap #right-contents #wish-list .wish-box .item2 .button-area {
   text-align: center;
-}
-
-body #wrap #right-contents #wish-list .wish-box .item2 .button-area .wish-button {
-  background-color: #EB68A0;
-  border: solid 2px #fff;
-  border-radius: 50px;
-  -webkit-box-shadow: 0px 0px 8px gray;
-          box-shadow: 0px 0px 8px gray;
-  color: #fff;
-  cursor: pointer;
-  width: 150px;
-  font-size: 17px;
 }
 
 body #wrap #right-contents #itroduction-area-kamogawa {

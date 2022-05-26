@@ -292,6 +292,9 @@ body {
             #itroduction-area-hakkeijima {
                 margin: 80px 5% 0 5%;
                 display: flex;
+                .sp-area-img {
+                    display: none;
+                }
                 img {
                     margin-left: 20px;
                     width: $area-img-width;
@@ -345,16 +348,6 @@ body {
                         }
                         .button-area {
                             text-align: center;
-                            .wish-button {
-                                background-color: #EB68A0;
-                                border: solid 2px #fff;
-                                border-radius: 50px;
-                                box-shadow: 0px 0px 8px gray;
-                                color: #fff;
-                                cursor: pointer;
-                                width: 150px;
-                                font-size: 17px;
-                            }
                         }
                     }
                     .item2 {
@@ -364,16 +357,6 @@ body {
                         }
                         .button-area {
                             text-align: center;
-                            .wish-button {
-                                background-color: #EB68A0;
-                                border: solid 2px #fff;
-                                border-radius: 50px;
-                                box-shadow: 0px 0px 8px gray;
-                                color: #fff;
-                                cursor: pointer;
-                                width: 150px;
-                                font-size: 17px;
-                            }
                         }
                     }
                 }
