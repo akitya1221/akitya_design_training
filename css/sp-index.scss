@@ -59,8 +59,8 @@
             width: 100%; 
             text-align: center;
             .header-img {
-                width: 80px;
-                height: 80px;
+                width: 70px;
+                height: 70px;
             }
             #menu {
                 display: block;
@@ -70,7 +70,7 @@
                 .menu-button {
                     position: fixed;
                     top: 10px;
-                    right: 10px;
+                    right: 30px;
                     width: 50px;
                     height: 50px;
                     z-index: 90;
@@ -94,12 +94,12 @@
                     background-color: rgba(0, 0, 0, 0.3);
         
                     ul {
-                        padding: 70px 10px 0;
+                        padding: 70px 0 0 0;
                     }
         
                     ul li {
                         text-align: center;
-                        margin: 50px;
+                        margin: 50px 0;
                         list-style: none;
                     }
         
@@ -424,10 +424,12 @@
             color: #fff;
             width: 100%;
             .img-box{
+                text-align: left;
                 padding-top: 30px;
                 img {
                     width: 100px;
                     height: 100px;
+                    margin: 0 25px;
                 }
             }
             .text-box {
