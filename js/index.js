@@ -3,7 +3,7 @@ $('.slider').slick({
   autoplaySpeed: 2000, //自動再生のスピード
   speed: 800,     //スライドするスピード
   dots: true,
-  arrows: true,
+  arrows: false,
   infinite: true,
   pauseOnHover: false,
 });
