@@ -43,7 +43,8 @@
     font-size: 17px;
   }
   body {
-    width: 600px;
+    background-color: black;
+    width: 100%;
     margin: 0 auto;
   }
   body header {
